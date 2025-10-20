@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <!-- The heading -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      "
+    >
+      <h3 style="color: blue">Student Registration Form</h3>
+
+      <!-- The Table Section -->
+      <table border="1" style="width: 40%; border-collapse: collapse">
+        <tr>
+          <th colspan="2">Student Details</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Tom Notes</td>
+        </tr>
+        <tr>
+          <td>Student ID</td>
+          <td>TN_010358_TCH_RISE_0002</td>
+        </tr>
+      </table>
+
+      <!-- The form section -->
+      <form style="width: 40%">
+        <fieldset style="border: 2px solid blue">
+          <legend style="color: blue; font-weight: 600">
+            Personal Information
+          </legend>
+          <img
+            src="student.webp"
+            style="
+              width: 100px;
+              height: 100px;
+              border-radius: 50px;
+              object-fit: cover;
+              margin-inline: auto;
+              display: block;
+            "
+            alt=""
+          />
+          <br />
+          <label>Full Name</label>
+          <br />
+          <input type="text" name="name" placeholder="Enter your name" />
+          <br />
+
+          <!-- Radio section -->
+          <label>Gender:</label>
+          <br />
+          <input type="radio" name="gender" value="boy" />
+          <label>Male</label>
+
+          <input type="radio" name="gender" value="girl" />
+          <label>Female</label>
+          <br />
+          <!-- For checkbox -->
+          <label for="hobbies">Hobbies:</label>
+          <br />
+          <input type="checkbox" name="hobbies" value="reading" />
+          <label>Reading</label>
+          <input type="checkbox" name="hobbies" value="dancing" />
+          <label>Dancing</label>
+          <input type="checkbox" name="hobbies" value="traveling" />
+          <label>Traveling</label>
+          <input type="checkbox" name="hobbies" value="cooking" />
+          <label>Cooking</label>
+          <br />
+          <!-- Select section -->
+          <label>Course of Study</label>
+          <br />
+          <select>
+            <option value="select">Select a course</option>
+            <option value="mobile">Mobile App</option>
+            <option value="cyber">Cybersecurity</option>
+            <option value="python">Fullstack with Python</option>
+            <option value="data">Data Engineering</option>
+          </select>
+          <br />
+          <br />
+          <button
+            type="submit"
+            style="
+              background-color: blue;
+              color: white;
+              border: none;
+              padding: 10px;
+              width: 90px;
+              display: block;
+              margin-inline: auto;
+            "
+          >
+            Submit
+          </button>
+        </fieldset>
+      </form>
+
+      <!-- Second Section -->
+      <h3 style="color: blue">Instructions</h3>
+      <ul style="margin-right: 160px;">
+        <li>Fill out all required field in the form</li>
+        <li>Ensure you select at least one hobby</li>
+        <li>Double check your course selection before submitting</li>
+      </ul>
+      <img
+        src="student.webp"
+        style="
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          object-fit: cover;
+        "
+        alt=""
+      />
+    </div>
+  </body>
+</html>

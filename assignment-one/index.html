@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+
+    <!-- Internal Styling -->
+    <style>
+      /* Heading Styles */
+      h1,
+      h2 {
+        text-align: center;
+        color: #030a8c;
+      }
+
+      /* Main section styles */
+      main {
+        width: min(500px, 85vw);
+        margin-inline: auto;
+        padding: 0;
+      }
+
+      /* List styles */
+      ul {
+        padding: 0;
+      }
+
+      /* Table styles */
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th {
+        background-color: #b0d0e8;
+        text-align: center;
+        padding-block: 5px;
+      }
+      td {
+        padding: 10px;
+        width: 50%;
+      }
+
+      /* form styles */
+      fieldset {
+        border: 2px solid #030a8c;
+      }
+      legend {
+        font-weight: bold;
+        color: #030a8c;
+        font-size: 1.1rem;
+      }
+
+      .image {
+        width: 100%;
+        display: grid;
+        place-content: center;
+      }
+
+      .image img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #000;
+        outline: 3px solid #030a8c;
+        outline-offset: 5px;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      label {
+        font-weight: 500;
+      }
+
+      form button {
+        height: 40px;
+        width: 80px;
+        border: none;
+        background-color: #030a8c;
+        text-align: center;
+        color: white;
+        transition: background-color 300ms ease;
+        &:hover {
+          background-color: #030a8cac;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Student Registration Form</h1>
+
+      <!-- Student Details Table -->
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Student Details</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td>Chukwuemeka Tom Okafor</td>
+          </tr>
+
+          <tr>
+            <td>Student ID</td>
+            <td>TL2.0/STU/MA/011</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+
+      <!-- Personal Information Form -->
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="image">
+            <img src="public/student.webp" alt="Student Profile Picture" />
+          </div>
+          <br /><br />
+
+          <!-- Student name -->
+          <label for="name">Full Name:</label>
+
+          <br />
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+
+          <br />
+          <br />
+
+          <!-- Student Gender -->
+          <label>Gender:</label>
+          <br />
+
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+
+          <br />
+
+          <!-- Student Hobbies -->
+          <label>Hobbies:</label>
+          <br />
+          <input type="checkbox" name="hobbies" id="reading" value="reading" />
+          <label for="reading">Reading</label>
+
+          <input type="checkbox" name="hobbies" id="sports" value="sports" />
+          <label for="sports">sports</label>
+
+          <input type="checkbox" name="hobbies" id="music" value="music" />
+          <label for="music">Music</label>
+
+          <br />
+
+          <!-- Student's Course -->
+          <label for="course">Course of Study:</label>
+          <br />
+          <select name="course" id="course">
+            <option value="">Select a course</option>
+            <option value="fullstack_python">
+              Fullstack Development with Python
+            </option>
+            <option value="fullstack_javascript">
+              Fullstack Development with Javascript
+            </option>
+            <option value="3d_game_dev">
+              3D Animation and Game Development with Godot
+            </option>
+            <option value="2d_animation">2D Animation and Digital Arts</option>
+            <option value="prompt_engineering">
+              AI and Prompt Engineering
+            </option>
+            <option value="machine_learing">AI and Machine Learning</option>
+            <option value="data_engineering">Data Engineering</option>
+            <option value="product_management">
+              Product Management and UI/UX
+            </option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="mobile_app_development">
+              Mobile App Development
+            </option>
+          </select>
+
+          <br />
+          <br />
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+
+      <!-- Instruction section -->
+      <h2>Instructions</h2>
+      <ul>
+        <li>Fill out all required fields in the form.</li>
+        <li>Ensure you select at least one hobby</li>
+        <li>Double-check your course selection before submitting</li>
+      </ul>
+      <br /><br />
+      <div class="image">
+        <img src="public/student-icon.jpg" alt="student icon" />
+      </div>
+    </main>
+  </body>
+</html>
