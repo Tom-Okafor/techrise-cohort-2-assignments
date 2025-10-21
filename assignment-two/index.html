@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marmelad&family=Kavoon&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/grow-ai.png" type="image/png" />
+    <title>Grow Ai</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 10px 24px 40px 24px;
+        background-color: #f9f9f9;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header img {
+        height: 40px;
+        object-fit: contain;
+      }
+
+      header div {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      header div span {
+        font-weight: 700;
+        font-family: "Kavoon", sans-serif;
+        font-size: 1.05rem;
+        letter-spacing: 1.5px;
+      }
+
+      header nav {
+        display: flex;
+        gap: 32px;
+      }
+
+      header nav a {
+        font-size: 0.9rem;
+      }
+      header select {
+        font-size: 0.9rem;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      button {
+        width: 80;
+        padding-block: 12px;
+        padding-inline: 24px;
+        background-color: #131313;
+        color: white;
+        border-radius: 50px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+                  text-transform: capitalize;
+                  transition: all 300 ease-in-out;
+                  &:hover {
+                    background-color: #f0f0f0;
+                    outline: 2px solid #131313;
+                    color: #131313;
+                  }
+
+      }
+      .btn-white {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &:hover {
+                    border: 2px solid #131313;
+                  }
+      }
+
+      .btn-white .icon-circle {
+        border: 2px solid #131313;
+        border-radius: 50px;
+        padding: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .btn-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <div>
+        <img src="assets/grow-ai.png" alt="logo" />
+        <span>Grow.Ai</span>
+      </div>
+      <nav>
+        <select name="products" id="products">
+          <option value="products">Products</option>
+          <option value="social-media-growth">Media</option>
+          <option value="digital-marketing">Marketing</option>
+          <option value="virtual-assistance">Beauty</option>
+        </select>
+        <a href="#">Solutions</a>
+        <a href="#">Resources</a>
+        <a href="#">Ai Solutions</a>
+      </nav>
+      <button>Get Started</button>
+    </header>
+
+    <!-- Hero Text Section -->
+    <section
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        margin-top: 60px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 6px;
+          border: 1px solid #131313;
+          border-radius: 20px;
+        "
+      >
+        <img src="assets/bolt.svg" alt="bolt" style="width: 20px" />
+        <p
+          style="
+            font-family: 'Open sans', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: capitalize;
+          "
+        >
+          Reel Ai secures <span style="font-weight: 700">$45.6M</span> to fuel
+          expansion and innovation
+        </p>
+        <img
+          src="assets/arrow-right.svg"
+          alt="arrow right"
+          style="width: 20px"
+        />
+      </div>
+
+      <h1
+        style="
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          font-size: 3.5rem;
+          font-family: 'Marmelad', sans-serif;
+          text-transform: capitalize;
+        "
+      >
+        <span>grow faster with</span> <span>AI-Powered Automation</span>
+      </h1>
+      <p
+        style="
+          font-family: 'Open Sans', sans-serif;
+          max-width: 70ch;
+          text-align: center;
+          font-size: 1.1rem;
+          text-transform: capitalize;
+          text-wrap: wrap pretty;
+        "
+      >
+        Unlock the full potential of your business with intelligent automation
+        designed to save time, reduce manual effort, and accelerate performance
+      </p>
+      <!-- Hero Buttons -->
+      <div class="btn-container">
+        <button>start free today</btuton>
+        <button class="btn-white">
+          <span class="icon-circle"><img src="assets/play.svg" alt="play icon" /></span>
+          <span>how it works</span></button
+        >
+      </div>
+    </section>
+    <!-- Hero Images section -->
+     <section style="display: flex; gap: 16px; align-items: center; margin-top: 40px;">
+      <img src="assets/grow-ai-image.png" alt="three girls in colorful wear" style="width: 65%; height: 500px; border-radius: 30px; object-fit: cover; object-position: center bottom;">
+      <img src="assets/chart-grow-ai.png" alt="analytical chart" style="width: 35%; height: 500px; border-radius: 30px; object-fit: cover;">
+     </section>
+  </body>
+</html>
