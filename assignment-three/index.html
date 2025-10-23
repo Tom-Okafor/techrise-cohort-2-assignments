@@ -13,18 +13,22 @@
         color: black;
       }
       main {
-        background-color: #ececec;
+        background-color: #e0e0e0;
         min-height: 100vh;
         padding: 10px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
       }
 
       header {
         display: flex;
-        gap: 8px;
+        gap: 10px;
       }
       header div {
-        background-color: #fcfcff;
+        background-color: #f4f4f4;
         padding-block: 12px;
         padding-inline: 16px;
         border-radius: 4px;
@@ -38,6 +42,115 @@
       }
       .large-header-block {
         flex-grow: 1;
+      }
+      .main-area {
+        flex-grow: 1;
+        display: flex;
+        gap: 10px;
+      }
+      .main-block-left,
+      .main-block-right {
+        background-color: #f4f4f4;
+        border-radius: 5px;
+      }
+      .main-block-left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+      }
+      .icons-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 16px;
+        padding-top: 32px;
+        padding-right: 20px;
+      }
+      .icons-holder img {
+        width: 28px;
+        object-fit: contain;
+        padding: 5px;
+        border-radius: 5px;
+        &:hover {
+          outline: 2px solid #122;
+        }
+      }
+
+      .main-block-right {
+        width: 40%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .top-text-section {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+      .top-text-section > span {
+        background-color: #c99ee6;
+        font-weight: 600;
+        padding: 8px;
+        padding-inline: 12px;
+        font-size: 14px;
+        border-radius: 30px;
+        width: fit-content;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      h1 {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 span {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        line-height: 0.9;
+        font-size: 64px;
+        letter-spacing: -2px;
+      }
+
+      .top-text-section p {
+        max-width: 40ch;
+        color: #a0a0a0;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+      }
+      .bottom-button-section {
+        display: flex;
+        gap: 10px;
+      }
+      .bottom-button-section button img {
+        width: 24px;
+      }
+      .button-one {
+        flex-grow: 1;
+        background-color: #131313;
+        height: 44px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        color: #e0e0e0;
+        align-items: center;
+        padding-inline: 20px;
+      }
+      .button-one span {
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .button-one img {
+        transform: rotate(-45deg);
+      }
+      .button-two {
+        height: 44px;
+        width: 44px;
+        border-radius: 4px;
+        border: 2px solid #404040;
       }
     </style>
   </head>
@@ -60,11 +173,43 @@
         </div>
       </header>
       <!-- Larger main area section -->
-      <section>
+      <section class="main-area">
         <!-- First large block -->
-        <div></div>
+        <div class="main-block-left">
+          <div class="icons-holder">
+            <img src="assets/twitter.png" alt="twitter icon" />
+            <img src="assets/tiktok.png" alt="tiktok icon" />
+          </div>
+          <img
+            class="main-image"
+            src="assets/image-by-gemini.png"
+            alt="lady sitting on a sofa with a table in front of her in a well furnished room"
+          />
+        </div>
         <!-- Second large block -->
-        <div></div>
+        <div class="main-block-right">
+          <div class="top-text-section">
+            <span>Your daily pause</span>
+            <h1>
+              <span>Meditation.</span>
+              <span>Feel better.</span>
+              <span>Everyday.</span>
+            </h1>
+            <p>
+              Calm your mind, ease daily stress, and reconnect with yourself -
+              no matter where life takes you.
+            </p>
+          </div>
+          <div class="bottom-button-section">
+            <button class="button-one">
+              <span>Try A Session</span>
+              <img src="assets/arrow-right.svg" alt="arrow icon" />
+            </button>
+            <button class="button-two">
+              <img src="assets/email-svgrepo-com.svg" alt="email icon" />
+            </button>
+          </div>
+        </div>
       </section>
     </main>
   </body>
