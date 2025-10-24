@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Awesome Product</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      header {
+        background-color: dodgerblue;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-block: 32px;
+      }
+      h2 {
+        color: white;
+      }
+      nav {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+      }
+      nav a {
+        color: white;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+      .welcome {
+        padding-block: 100px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        gap: 12px;
+      }
+      .welcome h1,
+      .welcome p {
+        color: white;
+      }
+      .welcome p {
+        max-width: 60ch;
+      }
+      .welcome button {
+        padding: 12px;
+        border-radius: 3px;
+        color: white;
+        border: none;
+        background-color: dodgerblue;
+      }
+      .features {
+        background-color: white;
+        color: black;
+        padding-block: 48px;
+      }
+      .features ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      .features li {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        width: 25%;
+      }
+.features li p {
+    line-height: 1.5;
+}
+      footer {
+        background-color: #333;
+        text-align: center;
+        padding-block: 24px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>My Awesome Product</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <h1>Welcome to our product</h1>
+        <p>
+          Discover the best solution for your needs with our innovative and
+          user-friendly platform.
+        </p>
+        <button>Get started</button>
+      </section>
+      <section class="features">
+        <ul>
+          <li>
+            <h3>Feature 1</h3>
+            <p>
+              Nisi esse laborum duis irure in nisi proident esse anim. Aliquip
+              ex anim deserunt dolor officia pariatur consectetur exercitation
+              cillum anim qui aliquip.
+            </p>
+          </li>
+
+          <li>
+            <h3>Feature 2</h3>
+            <p>
+              Sunt en im nulla duis ipsum non et laborum consequat eu id
+              occaecat deserunt.
+            </p>
+          </li>
+          <li>
+            <h3>Feature 3</h3>
+            <p>
+              Ad Lorem laborum nisi dolor velit sint ipsum qui quis adipisicing
+              culpa eu.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>&copy;2025 My Awesome Product. All Rights Reserved</footer>
+  </body>
+</html>
