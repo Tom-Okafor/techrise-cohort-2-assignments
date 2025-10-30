@@ -1,0 +1,523 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+i {
+  color: white;
+  background-color: transparent;
+  transition: all 300ms ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+header div {
+  display: flex;
+  background-color: black;
+}
+header a {
+  display: block;
+  padding-block: 8px;
+  padding-inline: 16px;
+  transition: all 300ms ease;
+  background-color: black;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+header a:hover i {
+  color: black;
+}
+
+/* Hero styles */
+
+.hero {
+  padding-block: 48px;
+  background-color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-block: 10px;
+}
+
+.hero h6 {
+  font-size: 16px;
+  margin-block: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.hero-span {
+  background-color: black;
+  color: white;
+  padding-inline: 8px;
+}
+
+.central-image {
+  height: 837px;
+  background-image: url("assets/jane.jpg");
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 24px;
+  align-items: flex-start;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.central-image p {
+  font-size: 36px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+}
+
+.central-image h2 {
+  font-size: 64px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.central-image button {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  padding: 12px 24px;
+  opacity: 0.6;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  transition: opacity 300ms ease-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.blog-content {
+  background-color: #f1f1f1;
+  display: flex;
+  padding-inline: 40px;
+  padding-block: 24px;
+  gap: 32px;
+  justify-content: flex-start;
+}
+
+.left-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 68%;
+}
+
+.left-block-first-box {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 20px;
+}
+
+h3,
+h4 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.gray-text {
+  opacity: 0.6;
+}
+
+.left-block-first-box p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+
+.user-interactions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.like-button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+  color: black;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 300ms ease-in;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+.like-button i.fa-thumbs-up {
+  color: black;
+}
+
+.like-button span {
+  font-weight: 600;
+}
+
+.replies-container {
+  background-color: black;
+  padding: 8px 16px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    background-color: #ccc;
+    color: black;
+  }
+}
+
+.replies-box {
+  background-color: white;
+  color: black;
+  padding-inline: 8px;
+  margin-left: 4px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #eee;
+}
+
+.left-block-footer {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.left-block-footer img {
+  width: 90px;
+  object-fit: contain;
+}
+
+.footer-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-footer-text {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+}
+.main-footer-text span {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+.main-footer-text .gray-text {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+
+.secondary-footer-text {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.right-content-box {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 40px;
+}
+.right-content-box h4 {
+  text-align: left;
+}
+.right-block-first-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-first-text-block {
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
+  color: white;
+}
+
+.block-padding {
+  padding: 10px 16px;
+}
+
+.right-block-first-block img {
+  filter: grayscale(0.7);
+}
+.right-first-text-block h4 {
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.right-first-text-block p {
+  font-size: 15px;
+  font-family: "Open Sans";
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-wrap: wrap balance;
+}
+
+.right-block-second-block,
+.right-block-third-block,
+.right-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-block-right-header,
+.third-block-right-header,
+.right-block-header {
+  padding: 20px;
+  background-color: black;
+}
+
+.second-block-right-header h4,
+.third-block-right-header h4,
+.right-block-header h4 {
+  color: white;
+  font-size: 20px;
+  font-family: "Oswald";
+  text-transform: capitalize;
+  text-transform: left;
+}
+
+.second-block-card {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.second-block-card img {
+  width: 50px;
+  object-fit: contain;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text p {
+  color: black;
+  font-size: 18px;
+  font-family: "Open Sans";
+}
+
+.card-text p.smaller-card-text {
+  font-size: 15px;
+}
+
+.second-block-card:not(.second-block-first-card) {
+  border-top: 1px solid #eee;
+}
+
+.cards-container {
+  background-color: white;
+}
+
+.third-block-central-box,
+.central-box {
+  padding: 16px;
+  background-color: white;
+}
+
+.central-box-inner {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.central-box-inner p {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.central-ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 5px;
+  row-gap: 16px;
+  flex-wrap: wrap;
+}
+
+.central-ul li {
+  padding: 0.01em 8px;
+  background-color: #f1f1f1;
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: black;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.central-ul li.bold {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.image-container img {
+  width: calc(50% - 16px);
+  height: 110px;
+  object-fit: cover;
+}
+
+.sixth-block-icons-holder {
+  display: flex;
+}
+.sixth-block-icons-holder a {
+  i {
+    font-size: 24px;
+    color: black;
+    transition: color 300ms ease-out;
+  }
+
+  &:hover i {
+    opacity: 0.6;
+  }
+}
+
+.central-box-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.central-box-form label {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.central-box-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+::placeholder {
+  font-family: "Open Sans";
+}
+
+.central-box-form button {
+  background-color: #f44336;
+  color: white;
+  font-family: "Open Sans";
+  padding: 8px 16px;
+  transition: background-color 300ms ease-in-out;
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+footer {
+  padding: 32px;
+  background-color: #616161;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.footer-link {
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  transition: background-color 300ms ease-out;
+  &:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  &:hover i {
+    color: black;
+  }
+}
+
+.footer-link i {
+  font-weight: bolder;
+  transition: color 300ms ease-out;
+}
+
+.footer-link .footer-scroll-top {
+  font-size: 15px;
+  font-family: "Open Sans";
+}
+
+.footer-span {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: white;
+}
+.footer-span a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
